@@ -1,0 +1,57 @@
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: flex; /* Use flexbox to create columns */
+    flex-direction: column;
+    justify-content: space-between; /* Distribute columns evenly */
+    max-width: 1200px;
+    margin: 0 auto; /* Center the container */
+    padding: 50px;
+    
+
+}
+
+.column {
+    flex: 1; /* Each column takes equal space */
+    margin: 0 px; /* Space between columns */
+    text-align: center;
+}
+
+#SEDANS{
+    background-color: rgb(214, 95, 175);
+    color: aliceblue;
+    border-radius: 5px 0 0 5px ;
+}
+
+#VANS{
+    background-color: rgb(139, 3, 139);
+    color: aliceblue;
+}
+#LUXURY{
+    background-color: green;
+    color: aliceblue;
+    border-radius: 0 5px 5px 0;
+}
+
+button{
+    
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: orange;
+    border: transparent;
+    color: aliceblue;
+    border-radius: 25px;
+}
+
+@media (min-width: 768px) {
+    .container{
+        flex-direction: row;
+    }
+
+    .container{
+        margin: 0 10px;
+    }
+}
